@@ -14,6 +14,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+.messageDiv{
+  /* display: none; */
+  text-align: center;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  animation: fadeOut 7s forwards;
+}
+
 h1{
   text-align: center;
   /* margin: 20px; */

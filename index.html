@@ -11,7 +11,8 @@
     <section>
       <div class="pic"></div>
       <div class="signup">
-        <form id="signupForm">
+        <form method="post" action="" id="signupForm">
+          <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
           <h1>Sign Up</h1>
           <div>
             <label for="First Name">First Name</label>
@@ -51,7 +52,7 @@
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required placeholder="Password must be atleast 8 Char" />
           </div>
-          <button type="submit">Sign Up</button>
+          <button type="submit" id="submitSignUp">Sign Up</button>
         </form>
         <!-- Login Link -->
         <span>
@@ -60,6 +61,7 @@
         </span>
       </div>
     </section>
-    <script src="signup.js"></script>
+    <!-- <script src="signup.js"></script> -->
+     <script type="module" src="signupfirebase.js"></script>
   </body>
 </html>

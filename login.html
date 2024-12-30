@@ -11,7 +11,9 @@
     <section>
       <div class="pic"></div>
       <div class="logIn">
-        <form>
+        <form method="get" action="">
+          <div id="signInMessage" class="messageDiv" style="display: none;"></div>
+
           <h1>Log In</h1>
           <!-- <div>
             <label for="UserName">User Name</label>
@@ -29,7 +31,7 @@
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required placeholder="Please Enter Your Password" />
           </div>
-          <button type="logIn">Log In</button>
+          <button type="logIn" id="logInBtn">Log In</button>
         </form>
         <!-- Login Link -->
         <span>
@@ -42,7 +44,7 @@
         </span>
       </div>
     </section>
-<script src="login.js"></script>
-
+<!-- <script src="login.js"></script> -->
+<script type="module" src="loginfirebase.js"></script>
   </body>
 </html>
