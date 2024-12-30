@@ -13,7 +13,7 @@ import {
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDkHCfZjvZGKFXUN_rqGsxZC_gn50vMuE4",
+  apiKey: "api key",
   authDomain: "helloworld-9d5f8.firebaseapp.com",
   projectId: "helloworld-9d5f8",
   storageBucket: "helloworld-9d5f8.firebasestorage.app",
