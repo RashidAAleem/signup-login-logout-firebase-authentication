@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #32262684;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    text-align: center;
+    margin: 20px;
+    text-decoration: underline;
+  }
+  section {
+    width: 50%;
+    height: 64.38vh;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .pic {
+    background-image: url("images/changepassword.jpg");
+    background-size: 70% auto; /* Set the width to 50% of the container, height adjusts automatically */
+    /* background-size: contain; Ensures the image fills the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-blend-mode: darken;
+    background-color: #f0f0f0; /* Fallback color */
+    color: #333;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logIn {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logIn div {
+    margin-bottom: 15px;
+  }
+  .logIn label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .logIn input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .logIn button {
+    display: flex;
+    /* margin-top: 10px; */
+    margin: 20px auto;
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .logIn button:hover {
+    background-color: #0056b3;
+  }
+  .logIn button:active {
+    scale: 0.95;
+  }
+  span {
+    text-align: center;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    section {
+      width: 80%;
+      grid-template-rows: 0.5fr 0.5fr;
+      grid-template-columns: none;
+      height: auto;
+    }
+    .pic {
+        background-size: 35% auto; /* Set the width to 50% of the container, height adjusts automatically */
+      height: 230px; /* Ensures a consistent height for the image container */
+      font-size: 1.5rem;
+    }
+    .logIn {
+      margin-top: 20px; /* Reduces the space above */
+      padding: 15px; /* Reduces padding overall */
+    }
+    .logIn div {
+      margin-bottom: 10px; /* Reduce bottom margin for inputs */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    section {
+      width: 80%;
+      grid-template-rows: 0.5fr 0.5fr;
+      grid-template-columns: none;
+      height: auto;
+    }
+    .pic {
+        background-size: 70% auto; /* Set the width to 50% of the container, height adjusts automatically */
+      height: 230px;
+      font-size: 1.2rem;
+      /* padding: 10px; */
+    }
+    .logIn {
+      margin-top: 10px; /* Even less space above on very small screens */
+      padding: 10px; /* Further reduced padding */
+    }
+    .logIn div {
+      margin-bottom: 8px; /* Further reduced bottom margin for inputs */
+    }
+  
+    .logIn input {
+      font-size: 0.9rem;
+      padding: 6px;
+    }
+    .logIn button {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+  }
+  
